@@ -1,6 +1,6 @@
 <script lang="ts">
-  import SvelteLogo from '../assets/images/svelte-logo.svelte'
   import './styles.css'
+  import svelteLogo from '$lib/images/svelte-logo.svg'
 </script>
 
 <svelte:head>
@@ -11,7 +11,7 @@
   <div class="container">
     <div>
       <a href="https://kit.svelte.dev" target="_blank" rel="noreferrer">
-        <SvelteLogo />
+        <img src={svelteLogo} alt="SvelteKit" />
       </a>
     </div>
     <h1>Welcome to SvelteKit</h1>
@@ -25,7 +25,7 @@
       target="_blank"
       rel="noreferrer"
     >
-      Made with <SvelteLogo /> by Rodrigo D’Agostino
+      Made with <img src={svelteLogo} alt="SvelteKit" /> by Rodrigo D’Agostino
     </a>
   </div>
 </footer>
@@ -41,7 +41,7 @@
   .app-main {
     margin-top: 24vh;
 
-    :global(svg) {
+    img {
       width: 6rem;
       height: auto;
       margin: 0 auto;
@@ -75,7 +75,7 @@
       }
     }
 
-    :global(svg) {
+    img {
       height: 1.25rem;
       width: auto;
       vertical-align: middle;
