@@ -1,6 +1,6 @@
 <script lang="ts">
-  import './styles.css'
-  import svelteLogo from '$assets/images/svelte-logo.svg'
+  import './styles.css';
+  import svelteLogo from '$assets/images/svelte-logo.svg';
 </script>
 
 <svelte:head>
