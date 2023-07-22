@@ -66,8 +66,6 @@
     a {
       display: flex;
       color: var(--gray-400);
-      text-decoration: none;
-      transition: color 0.24s;
 
       &:focus,
       &:hover {

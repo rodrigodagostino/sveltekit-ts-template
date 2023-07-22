@@ -6,7 +6,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/poppins-v20-latin-400.woff2") format("woff2"),
+  src:
+    url("/fonts/poppins-v20-latin-400.woff2") format("woff2"),
     url("/fonts/poppins-v20-latin-400.woff") format("woff");
 }
 
@@ -15,7 +16,8 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url("/fonts/poppins-v20-latin-700.woff2") format("woff2"),
+  src:
+    url("/fonts/poppins-v20-latin-700.woff2") format("woff2"),
     url("/fonts/poppins-v20-latin-700.woff") format("woff");
 }
 
@@ -81,18 +83,18 @@ hr {
 
 ::selection {
   color: var(--white);
-  background: var(--teal-600);
+  background: #ff3e00;
 }
 
 a {
-  color: var(--teal-600);
-  transition: color 0.32s, outline 0.32s;
+  color: #ff3e00;
+  text-underline-offset: 0.1875em;
   outline: 1px dotted transparent;
 }
 
 a:focus,
 a:hover {
-  color: var(--emerald-500);
+  text-decoration-thickness: 0.125em;
 }
 
 a:focus-visible {
