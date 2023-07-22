@@ -5,9 +5,11 @@ module.exports = {
     es2017: true,
     node: true,
   },
-  extends: ['plugin:svelte/prettier', 'prettier'],
-  // In order to display Prettier errors through ESLint rules, eslint-plugin-prettier is required.
-  // Remove it (along with the dependency) if you do not wish to display Prettier errors.
+  /**
+   * In order to display Prettier errors through ESLint, 'plugin:prettier/recommended' is added in the property below.
+   * Switch it for 'prettier' if you do not wish this behavior (the 'eslint-plugin-prettier' dependency can be removed too).
+   */
+  extends: ['plugin:svelte/prettier', 'plugin:prettier/recommended'],
   plugins: ['eslint-plugin-prettier'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -16,9 +18,6 @@ module.exports = {
     extraFileExtensions: ['.svelte'],
   },
   ignorePatterns: ['*.cjs'],
-  rules: {
-    'prettier/prettier': 'error',
-  },
   overrides: [
     {
       files: ['*.svelte'],
