@@ -45,12 +45,7 @@
 
 		a {
 			display: flex;
-			color: var(--gray-400);
-
-			&:focus,
-			&:hover {
-				color: var(--gray-600);
-			}
+			color: var(--gray-500);
 		}
 
 		img {

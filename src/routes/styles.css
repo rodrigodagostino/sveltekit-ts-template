@@ -92,11 +92,6 @@ a {
 	outline: 1px dotted transparent;
 }
 
-a:focus,
-a:hover {
-	text-decoration-thickness: 0.125em;
-}
-
 a:focus-visible {
 	outline: 1px dotted currentColor;
 }
