@@ -1,24 +1,29 @@
+/** @type { import("eslint").Linter.Config } */
 module.exports = {
 	root: true,
-	env: {
-		browser: true,
-		es2017: true,
-		node: true,
-	},
 	/**
 	 * In order to display Prettier errors through ESLint, 'plugin:prettier/recommended' is added in the property below.
 	 * Switch it for 'prettier' and remove 'eslint-plugin-prettier' from 'plugins' if you do not wish this behavior
 	 * (the 'eslint-plugin-prettier' dependency can be removed too).
 	 */
-	extends: ['plugin:svelte/prettier', 'plugin:prettier/recommended'],
-	plugins: ['eslint-plugin-prettier'],
+	extends: [
+		'eslint:recommended',
+		'plugin:@typescript-eslint/recommended',
+		'plugin:svelte/prettier',
+		'plugin:prettier/recommended',
+	],
 	parser: '@typescript-eslint/parser',
+	plugins: ['eslint-plugin-prettier', '@typescript-eslint'],
 	parserOptions: {
 		sourceType: 'module',
 		ecmaVersion: 2020,
 		extraFileExtensions: ['.svelte'],
 	},
-	ignorePatterns: ['*.cjs'],
+	env: {
+		browser: true,
+		es2017: true,
+		node: true,
+	},
 	overrides: [
 		{
 			files: ['*.svelte'],
