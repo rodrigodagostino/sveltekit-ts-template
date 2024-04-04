@@ -1,5 +1,5 @@
 <script lang="ts">
-	import svelteLogo from '$assets/images/svelte-logo.svg';
+	import svelteLogo from '$lib/assets/images/svelte-logo.svg';
 	import './styles.css';
 </script>
 
