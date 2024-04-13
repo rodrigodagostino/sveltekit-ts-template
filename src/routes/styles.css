@@ -152,9 +152,3 @@ body {
 	display: flex;
 	justify-content: center;
 }
-
-.app {
-	display: flex;
-	flex-direction: column;
-	min-height: 100vh;
-}

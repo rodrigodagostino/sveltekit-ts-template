@@ -3,29 +3,30 @@
 	import './styles.css';
 </script>
 
-<main class="app-main">
-	<div class="container">
-		<slot />
-	</div>
-</main>
-<footer class="app-footer">
-	<div class="container">
-		<a
-			href="https://github.com/rodrigodagostino/vite-svelte-ts-template"
-			target="_blank"
-			rel="noreferrer"
-		>
-			Made with <img src={svelteLogo} alt="SvelteKit" /> by Rodrigo D’Agostino
-		</a>
-	</div>
-</footer>
+<div id="app" class="app">
+	<main class="app-main">
+		<div class="container">
+			<slot />
+		</div>
+	</main>
+	<footer class="app-footer">
+		<div class="container">
+			<a
+				href="https://github.com/rodrigodagostino/vite-svelte-ts-template"
+				target="_blank"
+				rel="noreferrer"
+			>
+				Made with <img src={svelteLogo} alt="SvelteKit" /> by Rodrigo D’Agostino
+			</a>
+		</div>
+	</footer>
+</div>
 
 <style lang="scss">
-	.container {
-		max-width: 54rem;
-		margin: 0 auto;
-		padding: 1rem;
-		position: relative;
+	.app {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
 	}
 
 	.app-main {
@@ -55,5 +56,12 @@
 			margin: 0 0.25rem;
 			display: inline-block;
 		}
+	}
+
+	.container {
+		max-width: 54rem;
+		margin: 0 auto;
+		padding: 1rem;
+		position: relative;
 	}
 </style>
