@@ -1,4 +1,4 @@
-# SvelteKit + TS + Vite
+# SvelteKit TS Template
 
 This template should help get you started developing with SvelteKit and TypeScript in Vite.
 
